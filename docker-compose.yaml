@@ -21,8 +21,6 @@ services:
       context: "./node"
     restart: always
     env_file: ./.env
-    ports:
-      - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     volumes:
       - /app/node_modules
       - ./node:/data/node
